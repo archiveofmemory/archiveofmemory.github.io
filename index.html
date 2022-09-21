@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Archive of Memory</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
+  </script>
+</head>
+
+<body>
+
+<div class="center">
+   <span class="icon icon-yellow" id="yellow">
+
+   </span>
+      <audio id="note-g-4" controls="controls" preload="auto">
+        <source src="audio/g-4.mp3"></source>
+      </audio>
+
+   <span class="icon icon-blue" id="blue">
+      
+   </span>
+      <audio id="note-a-5" controls="controls" preload="auto">
+        <source src="audio/a-5.mp3"></source>
+      </audio>
+
+   <span class="icon icon-green" id="green">
+      
+   </span>
+      <audio id="note-a5" controls="controls" preload="auto">
+        <source src="audio/a5.mp3"></source>
+      </audio>
+
+   <span class="icon icon-aqua" id="aqua">
+      
+   </span>
+      <audio id="note-b5" controls="controls" preload="auto">
+        <source src="audio/b5.mp3"></source>
+      </audio>
+
+   <span class="icon icon-red" id="red">
+      
+   </span>
+      <audio id="note-d-5" controls="controls" preload="auto">
+        <source src="audio/d-5.mp3"></source>
+      </audio>
+
+   <span class="icon icon-orange" id="orange">
+      
+   </span>
+      <audio id="note-f-5" controls="controls" preload="auto">
+        <source src="audio/f-5.mp3"></source>
+      </audio>
+
+   <span class="icon icon-pink" id="pink">
+      
+   </span>
+      <audio id="note-g-5" controls="controls" preload="auto">
+        <source src="audio/g-5.mp3"></source>
+      </audio>
+
+   <script>
+    var g_4 = $("#note-g-4")[0];
+    $("#yellow")
+	    .mouseenter(function() {
+		  g_4.play();
+	  });
+
+    var a_5 = $("#note-a-5")[0];
+    $("#blue")
+	    .mouseenter(function() {
+		  a_5.play();
+	  });
+
+    var a5 = $("#note-a5")[0];
+    $("#green")
+	    .mouseenter(function() {
+		  a5.play();
+	  });
+
+    var b5 = $("#note-b5")[0];
+    $("#aqua")
+	    .mouseenter(function() {
+		  b5.play();
+	  });
+
+    var d_5 = $("#note-d-5")[0];
+    $("#red")
+	    .mouseenter(function() {
+		  d_5.play();
+	  });
+
+    var f_5 = $("#note-f-5")[0];
+    $("#orange")
+	    .mouseenter(function() {
+		  f_5.play();
+	  });
+
+    var g_5 = $("#note-g-5")[0];
+    $("#pink")
+	    .mouseenter(function() {
+		  g_5.play();
+	  });
+  </script>
+
+  
+
+</div>
+
+
+</body>
+
+</html>
