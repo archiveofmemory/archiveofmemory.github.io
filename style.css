@@ -144,7 +144,7 @@ body {
 }
 
 
-/* Sponsors */
+/* Build Photos */
 .icon-orange {
   background-image: url('images/mirror.png');
   z-index: 2;
@@ -155,7 +155,7 @@ body {
 }
 .icon-orange:hover,
 .icon-orange:focus {
-  background-image: url('images/sponsor.png');
+  background-image: url('images/build.png');
   width: 500px;
   height: 500px;
   top: 50%;
