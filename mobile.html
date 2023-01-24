@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html>
+
+<style>
+form {
+  margin: 0 auto; 
+  width:100%;
+}
+
+div {
+   text-align: center;
+   width: 90%
+}
+
+input { 
+  width: 50%;
+  height: 100px;
+  padding: -20px -40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 80px;
+}
+
+input[type=submit] {
+  background-color: #000;
+  width: 50%;
+  height: 50px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 0px;
+  cursor: pointer;
+}
+   </style>
+
 <body>
 
 <h1>Archive of Collective Memory</h1>
 
+<div>
 <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://archiveofmemory.github.io/ty.html';}"></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted)  {window.location='https://archiveofmemory.github.io/ty.html';}"></iframe>
 
     <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdJJXJcit2pZZLxFZSAnb6ZOa-T9ntEFE8uBGdxVFoxMcRJkw/formResponse" method="post" target="hidden_iframe"
     onsubmit="submitted=true;">
         <h3>Please use the text box below to make your submission to the Archive of Collective Memory. <br>
          All submissions are anonymous. <br>
-         All text will be transcribed into music and played throughout the Art Shanties, forming our "collective memory"</h3>
-        <label>Submission</label>
-        <input name="entry.1990434310" type="text" size="35" required="True" maxlength="10000" placeholder="Your addition to the Archive here" />  <input type="submit" value="Send to the Archive" />
+         Text will be transcribed into music and played throughout the Art Shanties, forming our collective memory.</h3>
+        <label></label>
+        <input name="entry.1990434310" type="text" size="35" required="True" maxlength="10000" placeholder="Enter your addition to the Archive here" />  <br><input type="submit" value="Send to the Archive" />
     </form>
+</div>
 <br>
 <br>
 <p><b>About the Archive</b></p>
 <p>The Archive of Collective Memory is an interactive public art installation as part of the 2023 Art Shanty Projects. 
-   <br>
+   <br><br>
    The Archive offers an opportunity to visitors to reflect on the nature of representation, archives, and the relationship between individual and collective memory. From within its hexagonal wooden structure, the Archive plays audio transcribed from audience member's text inputs into music. 
    <br>
    Each weekend, the Archive will collect these submissions and add them to the Archive. 
