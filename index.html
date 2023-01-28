@@ -1,127 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+form {
+  margin: 0 auto; 
+  width:100%;
+}
 
-  <title>Archive of Memory</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="style.css">
+div {
+   text-align: center;
+   width: 90%
+}
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
-  </script>
-</head>
+input { 
+  width: 50%;
+  height: 100px;
+  padding: -20px -40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 80px;
+}
+
+input[type=submit] {
+  background-color: #000;
+  width: 50%;
+  height: 50px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 0px;
+  cursor: pointer;
+}
+</style>
 
 <body>
 
-<div class="center">
-   <span class="icon icon-yellow" id="yellow">
-
-   </span>
-      <audio id="note-g5" controls="controls" preload="auto">
-        <source src="audio/g5.mp3"></source>
-      </audio>
-
-   <span class="icon icon-blue" id="blue">
-      
-   </span>
-      <audio id="note-a-5" controls="controls" preload="auto">
-        <source src="audio/a-5.mp3"></source>
-      </audio>
-
-   <span class="icon icon-green" id="green">
-      
-   </span>
-      <audio id="note-a5" controls="controls" preload="auto">
-        <source src="audio/a5.mp3"></source>
-      </audio>
-
-   <span class="icon icon-aqua" id="aqua">
-      
-   </span>
-      <audio id="note-b5" controls="controls" preload="auto">
-        <source src="audio/b5.mp3"></source>
-      </audio>
-
-   <span class="icon icon-red" id="red">
-      
-   </span>
-      <audio id="note-d-5" controls="controls" preload="auto">
-        <source src="audio/d-5.mp3"></source>
-      </audio>
-
-   <span class="icon icon-orange" id="orange">
-      
-   </span>
-      <audio id="note-f-5" controls="controls" preload="auto">
-        <source src="audio/f-5.mp3"></source>
-      </audio>
-
-   <span class="icon icon-pink" id="pink">
-      
-   </span>
-      <audio id="note-g-5" controls="controls" preload="auto">
-        <source src="audio/g-5.mp3"></source>
-      </audio>
-
-   <script>
-    var g5 = $("#note-g5")[0];
-    $("#yellow")
-	    .mouseenter(function() {
-		  g5.play();
-	  });
-
-    var a_5 = $("#note-a-5")[0];
-    $("#blue")
-	    .mouseenter(function() {
-		  a_5.play();
-	  });
-
-    var a5 = $("#note-a5")[0];
-    $("#green")
-	    .mouseenter(function() {
-		  a5.play();
-	  });
-
-    var b5 = $("#note-b5")[0];
-    $("#aqua")
-	    .mouseenter(function() {
-		  b5.play();
-	  });
-
-    var d_5 = $("#note-d-5")[0];
-    $("#red")
-	    .mouseenter(function() {
-		  d_5.play();
-	  });
-
-    var f_5 = $("#note-f-5")[0];
-    $("#orange")
-	    .mouseenter(function() {
-		  f_5.play();
-	  });
-
-    var g_5 = $("#note-g-5")[0];
-    $("#pink")
-	    .mouseenter(function() {
-		  g_5.play();
-	  });
-  </script>
-
-  
-
-</div>
+<h1>Archive of Collective Memory</h1>
 
 <div>
-  
-  <a href="https://artshantyprojects.org">
-      <img src="images/asp.png" alt="art shanty projects logo" style="float:right;width:40px;height:40px;position:absolute;bottom:1%;right:1%;">
-    </a>
+   <script type="text/javascript">var submitted=false;</script>
+   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted)  {window.location='https://archiveofmemory.github.io/ty.html';}"></iframe>
+
+      <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdJJXJcit2pZZLxFZSAnb6ZOa-T9ntEFE8uBGdxVFoxMcRJkw/formResponse" method="post" target="hidden_iframe"
+      onsubmit="submitted=true;">
+         <h3>Please use the text box below to make your submission to the Archive of Collective Memory. <br>
+            All submissions are anonymous. <br>
+            Text will be transcribed into music and played throughout the Art Shanties, forming our collective memory.</h3>
+         <label></label>
+         <input name="entry.1990434310" type="text" size="35" required="True" maxlength="1000" placeholder="Enter your addition to the Archive here" />  <br><input type="submit" value="Send to the Archive" />
+         <br><i>Please be patient upon sending; it will take a moment for the confirmation page to load :)</i>
+      </form>
 </div>
 
+<br>
+<br>
+
+<p><b>About the Archive</b></p>
+<p>The Archive of Collective Memory is an interactive public art installation as part of the 2023 Art Shanty Projects. 
+   <br><br>
+   The Archive offers an opportunity for its visitors to reflect on the nature of representation, archives, and the relationship between individual and collective memory. From within its hexagonal wooden structure, the Archive plays music translated from Archive visitor's text-based submissions. 
+   <br><br>
+   At the end of each installation day, the Archive will collect and translate these submission by an algorithm designed by the artists before being added to the Archive. This algorithm, roughly speaking, translates individual letters and numbers into indiviual notes in a scale without halfsteps (to arbitrarily remove dissonance). Vowels in words introduce varying forms of rhythym and spacing introduce silence.
+   <br><br>
+   On the final day of the Art Shanties, the Archive will play back its contents <i>in extenso</i> - the accumulated music from all submissions to the archive - offering a space for reflection on what has been collectively represented and stored within the Archive.
+</p>
+<p>We enourage visitors to reflect on the nature of memory, representation, sound, and archives. A few questions to consider during or after your visit:
+   <br>
+<ul>
+   <li><i>What are the limitations of what can possibly be represented in the Archive of Collective Memory?</i></li>
+   <li><i>What is an archive? What satifies the conditions of being an archive?</i></li>
+   <li><i>What is the relationship between individual and collective memory?</i></li>
+   <li><i>How is individual memory alike or dislike an archive? And collective memory? Does either more resemble an archive than the other?</i></li>
+   <li><i>What <b>should</b> we remember as individuals? In what ways or manner should we remember? What should we forget? Why?</i></li>
+   <li><i>How should we remember as a soceity or as collectives of individuals?</i></li>
+   <li><i>What role do archives play in social memory?</i></li>
+</ul>
+</p>
+
+<p><b>Further Reading</b><br>
+<i>Coming soon</i></p>
+
+<p><b>Support more like this</b><br>
+   We hope you enjoyed your visit to the Archive!<br>
+   If you’d like to help us bring similar public artwork into the world please consider <a href="https://ko-fi.com/B0B2HYQMB">Buying Us a Coffee here</a> :)<br>
+   We appreciate your support! </p>
 
 </body>
-
 </html>
